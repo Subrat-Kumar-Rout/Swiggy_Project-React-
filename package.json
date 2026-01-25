@@ -1,0 +1,27 @@
+{
+  "name": "swiggy_project_react",
+  "version": "1.0.0",
+  "description": "Swiggy final react project",
+  "homepage": "https://github.com/Subrat-Kumar-Rout/Swiggy_Project-React-#readme",
+  "bugs": {
+    "url": "https://github.com/Subrat-Kumar-Rout/Swiggy_Project-React-/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Subrat-Kumar-Rout/Swiggy_Project-React-.git"
+  },
+  "license": "ISC",
+  "author": "Subrat Kumar Rout",
+  "type": "commonjs",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "parcel": "^2.16.3",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "tailwindcss": "^4.1.18"
+  }
+}
