@@ -1,7 +1,7 @@
 export default function Header(){
     return(
         <header>
-            <h1>how</h1>
+           <div></div>
         </header>
     )
 }
