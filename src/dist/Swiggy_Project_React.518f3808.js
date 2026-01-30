@@ -19737,12 +19737,38 @@ parcelHelpers.export(exports, "default", ()=>Header);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 function Header() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-            children: "how"
-        }, void 0, false, {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "bg-[#FF5200]",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        className: "bg-[#FF5200]  w-40",
+                        src: "https://st1.latestly.com/wp-content/uploads/2024/09/Swiggy-Logo.jpg"
+                    }, void 0, false, {
+                        fileName: "src/component/Header.js",
+                        lineNumber: 6,
+                        columnNumber: 17
+                    }, this)
+                }, void 0, false, {
+                    fileName: "src/component/Header.js",
+                    lineNumber: 5,
+                    columnNumber: 13
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
+                    fileName: "src/component/Header.js",
+                    lineNumber: 8,
+                    columnNumber: 13
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
+                    fileName: "src/component/Header.js",
+                    lineNumber: 9,
+                    columnNumber: 13
+                }, this)
+            ]
+        }, void 0, true, {
             fileName: "src/component/Header.js",
             lineNumber: 4,
-            columnNumber: 13
+            columnNumber: 12
         }, this)
     }, void 0, false, {
         fileName: "src/component/Header.js",
