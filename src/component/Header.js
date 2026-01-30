@@ -1,7 +1,13 @@
 export default function Header(){
     return(
         <header>
-           <div></div>
+           <div>
+            <div>
+                <img src=""></img>
+            </div>
+            <div></div>
+            <div></div>
+           </div>
         </header>
     )
 }
