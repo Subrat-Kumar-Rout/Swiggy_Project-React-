@@ -8,6 +8,7 @@
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-border-style: solid;
+      --tw-font-weight: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;
@@ -44,9 +45,20 @@
   :root, :host {
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-black: #000;
+    --color-white: #fff;
     --spacing: .25rem;
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
+    --font-weight-bold: 700;
+    --radius-2xl: 1rem;
     --default-transition-duration: .15s;
     --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     --default-font-family: var(--font-sans);
@@ -315,6 +327,18 @@
     position: static;
   }
 
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
+
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
+
+  .left-0 {
+    left: calc(var(--spacing) * 0);
+  }
+
   .\!container {
     width: 100% !important;
 
@@ -363,6 +387,18 @@
     }
   }
 
+  .mx-auto {
+    margin-inline: auto;
+  }
+
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
+
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
+
   .block {
     display: block;
   }
@@ -391,12 +427,40 @@
     display: table;
   }
 
-  .w-4 {
-    width: calc(var(--spacing) * 4);
+  .h-12 {
+    height: calc(var(--spacing) * 12);
+  }
+
+  .h-110 {
+    height: calc(var(--spacing) * 110);
   }
 
   .w-40 {
     width: calc(var(--spacing) * 40);
+  }
+
+  .w-60 {
+    width: calc(var(--spacing) * 60);
+  }
+
+  .w-\[40\%\] {
+    width: 40%;
+  }
+
+  .w-\[55\%\] {
+    width: 55%;
+  }
+
+  .max-w-\[60\%\] {
+    max-width: 60%;
+  }
+
+  .max-w-\[60\] {
+    max-width: 60px;
+  }
+
+  .max-w-\[70\%\] {
+    max-width: 70%;
   }
 
   .transform {
@@ -407,13 +471,125 @@
     resize: both;
   }
 
+  .items-baseline {
+    align-items: baseline;
+  }
+
+  .items-center {
+    align-items: center;
+  }
+
+  .justify-between {
+    justify-content: space-between;
+  }
+
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
+
+  .gap-15 {
+    gap: calc(var(--spacing) * 15);
+  }
+
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
+
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
 
+  .border-black {
+    border-color: var(--color-black);
+  }
+
+  .border-white {
+    border-color: var(--color-white);
+  }
+
   .bg-\[\#FF5200\] {
     background-color: #ff5200;
+  }
+
+  .bg-black {
+    background-color: var(--color-black);
+  }
+
+  .bg-white {
+    background-color: var(--color-white);
+  }
+
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
+
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
+  }
+
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
+  }
+
+  .pt-16 {
+    padding-top: calc(var(--spacing) * 16);
+  }
+
+  .pb-8 {
+    padding-bottom: calc(var(--spacing) * 8);
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+
+  .text-base {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+  }
+
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+
+  .text-white {
+    color: var(--color-white);
   }
 
   .lowercase {
@@ -483,6 +659,11 @@
   syntax: "*";
   inherits: false;
   initial-value: solid;
+}
+
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false
 }
 
 @property --tw-shadow {

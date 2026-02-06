@@ -7,7 +7,7 @@ function Main(){
     return(
         <>
         <Header></Header>
-        <h1>hello</h1>
+        
         </>
     )
 }

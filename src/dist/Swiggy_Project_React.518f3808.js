@@ -731,21 +731,12 @@ var _header = require("./component/Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
 function Main() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 9,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "hello"
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 10,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true);
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
+            fileName: "src/App.js",
+            lineNumber: 9,
+            columnNumber: 9
+        }, this)
+    }, void 0, false);
 }
 _c = Main;
 (0, _clientDefault.default).createRoot(document.getElementById("root")).render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Main, {}, void 0, false, {
@@ -19737,40 +19728,137 @@ parcelHelpers.export(exports, "default", ()=>Header);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 function Header() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "bg-[#FF5200]",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        className: "bg-[#FF5200]  w-40",
-                        src: "https://st1.latestly.com/wp-content/uploads/2024/09/Swiggy-Logo.jpg"
+        className: "bg-[#FF5200] font-serif",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex justify-between container mx-auto py-8 px-8",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        className: "w-40 h-12",
+                        src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/static-assets/images/swiggy_logo_white.png"
                     }, void 0, false, {
                         fileName: "src/component/Header.js",
                         lineNumber: 6,
                         columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: " text-white text-base font-bold flex gap-15 items-center",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                target: "_blank",
+                                href: "https://www.swiggy.com/corporate/",
+                                children: "Swiggy Corporate"
+                            }, void 0, false, {
+                                fileName: "src/component/Header.js",
+                                lineNumber: 8,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                target: "_blank",
+                                href: "https://partner.swiggy.com/login#/swiggy",
+                                children: "Partner With Us"
+                            }, void 0, false, {
+                                fileName: "src/component/Header.js",
+                                lineNumber: 9,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                className: "border border-white py-3 px-4 rounded-2xl",
+                                target: "_blank",
+                                href: "https://www.swiggy.com/corporate/",
+                                children: "Get the App"
+                            }, void 0, false, {
+                                fileName: "src/component/Header.js",
+                                lineNumber: 10,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                className: "border border-black bg-black py-3 px-4 rounded-2xl",
+                                target: "_blank",
+                                href: "https://www.swiggy.com/corporate/",
+                                children: "Sign in"
+                            }, void 0, false, {
+                                fileName: "src/component/Header.js",
+                                lineNumber: 11,
+                                columnNumber: 21
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/component/Header.js",
+                        lineNumber: 7,
+                        columnNumber: 17
                     }, this)
-                }, void 0, false, {
-                    fileName: "src/component/Header.js",
-                    lineNumber: 5,
-                    columnNumber: 13
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
-                    fileName: "src/component/Header.js",
-                    lineNumber: 8,
-                    columnNumber: 13
-                }, this),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
-                    fileName: "src/component/Header.js",
-                    lineNumber: 9,
-                    columnNumber: 13
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "src/component/Header.js",
-            lineNumber: 4,
-            columnNumber: 12
-        }, this)
-    }, void 0, false, {
+                ]
+            }, void 0, true, {
+                fileName: "src/component/Header.js",
+                lineNumber: 5,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "pt-16 pb-8 relative",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        className: "h-110 w-60 absolute top-0 left-0",
+                        src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Veggies_new.png"
+                    }, void 0, false, {
+                        fileName: "src/component/Header.js",
+                        lineNumber: 15,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        className: "h-110 w-60 absolute top-0 right-0",
+                        src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Sushi_replace.png"
+                    }, void 0, false, {
+                        fileName: "src/component/Header.js",
+                        lineNumber: 16,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "max-w-[60%] text-white font-bold text-5xl container mx-auto text-center",
+                        children: "Order food & groceries. Discover best restaurants. Swiggy it!"
+                    }, void 0, false, {
+                        fileName: "src/component/Header.js",
+                        lineNumber: 17,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "max-w-[70%] container mx-auto flex gap-5 mt-10",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                className: "bg-white w-[40%] text-xl py-4 px-6 rounded-2xl",
+                                placeholder: "Enter your deliver location"
+                            }, void 0, false, {
+                                fileName: "src/component/Header.js",
+                                lineNumber: 19,
+                                columnNumber: 17
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                className: "bg-white w-[55%] text-xl py-4 px-6 rounded-2xl",
+                                placeholder: "Search for resturant,item or more"
+                            }, void 0, false, {
+                                fileName: "src/component/Header.js",
+                                lineNumber: 20,
+                                columnNumber: 17
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/component/Header.js",
+                        lineNumber: 18,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/component/Header.js",
+                lineNumber: 14,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
+                fileName: "src/component/Header.js",
+                lineNumber: 24,
+                columnNumber: 13
+            }, this)
+        ]
+    }, void 0, true, {
         fileName: "src/component/Header.js",
         lineNumber: 3,
         columnNumber: 9
