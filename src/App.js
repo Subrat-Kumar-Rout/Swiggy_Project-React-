@@ -1,13 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./component/Header";
+import FoodOption from "./component/FoodOption";
 
 
 function Main(){
     return(
         <>
         <Header></Header>
-        
+        <FoodOption></FoodOption>
         </>
     )
 }

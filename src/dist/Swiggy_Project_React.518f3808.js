@@ -729,19 +729,28 @@ var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
 var _header = require("./component/Header");
 var _headerDefault = parcelHelpers.interopDefault(_header);
+var _foodOption = require("./component/FoodOption");
+var _foodOptionDefault = parcelHelpers.interopDefault(_foodOption);
 function Main() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
-            fileName: "src/App.js",
-            lineNumber: 9,
-            columnNumber: 9
-        }, this)
-    }, void 0, false);
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 10,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _foodOptionDefault.default), {}, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 11,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true);
 }
 _c = Main;
 (0, _clientDefault.default).createRoot(document.getElementById("root")).render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Main, {}, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 15,
+    lineNumber: 16,
     columnNumber: 61
 }, undefined));
 var _c;
@@ -752,7 +761,7 @@ $RefreshReg$(_c, "Main");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-dom/client":"hrvwu","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./component/Header":"3FunF"}],"dVPUn":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-dom/client":"hrvwu","./component/Header":"3FunF","./component/FoodOption":"c7dZB","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"dVPUn":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -17406,7 +17415,212 @@ module.exports = require("b0f0e6b9e8349dac");
     "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ && "function" === typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop && __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(Error());
 })();
 
-},{"6f0162e9ab224cd4":"jMk1U"}],"jnFvT":[function(require,module,exports,__globalThis) {
+},{"6f0162e9ab224cd4":"jMk1U"}],"3FunF":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$b724 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$b724.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$b724.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>Header);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+function Header() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
+        className: "bg-[#FF5200] font-serif",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex justify-between container mx-auto py-8 max-w-[80%]",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        className: "w-40 h-12",
+                        src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/static-assets/images/swiggy_logo_white.png"
+                    }, void 0, false, {
+                        fileName: "src/component/Header.js",
+                        lineNumber: 6,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: " text-white text-base font-bold flex gap-15 items-center",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                target: "_blank",
+                                href: "https://www.swiggy.com/corporate/",
+                                children: "Swiggy Corporate"
+                            }, void 0, false, {
+                                fileName: "src/component/Header.js",
+                                lineNumber: 8,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                target: "_blank",
+                                href: "https://partner.swiggy.com/login#/swiggy",
+                                children: "Partner With Us"
+                            }, void 0, false, {
+                                fileName: "src/component/Header.js",
+                                lineNumber: 9,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                className: "border border-white py-3 px-4 rounded-2xl",
+                                target: "_blank",
+                                href: "https://www.swiggy.com/corporate/",
+                                children: "Get the App"
+                            }, void 0, false, {
+                                fileName: "src/component/Header.js",
+                                lineNumber: 10,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                className: "border border-black bg-black py-3 px-4 rounded-2xl",
+                                target: "_blank",
+                                href: "https://www.swiggy.com/corporate/",
+                                children: "Sign in"
+                            }, void 0, false, {
+                                fileName: "src/component/Header.js",
+                                lineNumber: 11,
+                                columnNumber: 21
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/component/Header.js",
+                        lineNumber: 7,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/component/Header.js",
+                lineNumber: 5,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "pt-16 pb-8 relative",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        className: "h-110 w-60 absolute top-0 left-0",
+                        src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Veggies_new.png"
+                    }, void 0, false, {
+                        fileName: "src/component/Header.js",
+                        lineNumber: 15,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        className: "h-110 w-60 absolute top-0 right-0",
+                        src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Sushi_replace.png"
+                    }, void 0, false, {
+                        fileName: "src/component/Header.js",
+                        lineNumber: 16,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "max-w-[60%] text-white font-bold text-5xl container mx-auto text-center",
+                        children: "Order food & groceries. Discover best restaurants. Swiggy it!"
+                    }, void 0, false, {
+                        fileName: "src/component/Header.js",
+                        lineNumber: 17,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "max-w-[70%] container mx-auto flex gap-5 mt-10",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                className: "bg-white w-[40%] text-xl py-4 px-6 rounded-2xl",
+                                placeholder: "Enter your deliver location"
+                            }, void 0, false, {
+                                fileName: "src/component/Header.js",
+                                lineNumber: 19,
+                                columnNumber: 17
+                            }, this),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                className: "bg-white w-[55%] text-xl py-4 px-6 rounded-2xl",
+                                placeholder: "Search for resturant,item or more"
+                            }, void 0, false, {
+                                fileName: "src/component/Header.js",
+                                lineNumber: 20,
+                                columnNumber: 17
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/component/Header.js",
+                        lineNumber: 18,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/component/Header.js",
+                lineNumber: 14,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex container mx-auto max-w-[80%]",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: "https://www.swiggy.com/restaurants",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/ec86a309-9b06-48e2-9adc-35753f06bc0a_Food3BU.png"
+                        }, void 0, false, {
+                            fileName: "src/component/Header.js",
+                            lineNumber: 26,
+                            columnNumber: 21
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/component/Header.js",
+                        lineNumber: 25,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: "https://www.swiggy.com/instamart?entryId=1234&entryName=mainTileEntry4&v=1",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/b5c57bbf-df54-4dad-95d1-62e3a7a8424d_IM3BU.png"
+                        }, void 0, false, {
+                            fileName: "src/component/Header.js",
+                            lineNumber: 30,
+                            columnNumber: 21
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/component/Header.js",
+                        lineNumber: 29,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        href: "https://www.swiggy.com/dineout",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/b6d9b7ab-91c7-4f72-9bf2-fcd4ceec3537_DO3BU.png"
+                        }, void 0, false, {
+                            fileName: "src/component/Header.js",
+                            lineNumber: 34,
+                            columnNumber: 21
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "src/component/Header.js",
+                        lineNumber: 33,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "src/component/Header.js",
+                lineNumber: 24,
+                columnNumber: 13
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "src/component/Header.js",
+        lineNumber: 3,
+        columnNumber: 9
+    }, this);
+}
+_c = Header;
+var _c;
+$RefreshReg$(_c, "Header");
+
+  $parcel$ReactRefreshHelpers$b724.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"jnFvT":[function(require,module,exports,__globalThis) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -19714,165 +19928,550 @@ function $da9882e673ac146b$var$ErrorOverlay() {
     return null;
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"3FunF":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$b724 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-$parcel$ReactRefreshHelpers$b724.init();
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"c7dZB":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$43b1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$43b1.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
 var prevRefreshSig = globalThis.$RefreshSig$;
-$parcel$ReactRefreshHelpers$b724.prelude(module);
+$parcel$ReactRefreshHelpers$43b1.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>Header);
+parcelHelpers.export(exports, "default", ()=>FoodOption);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-function Header() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
-        className: "bg-[#FF5200] font-serif",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex justify-between container mx-auto py-8 px-8",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        className: "w-40 h-12",
-                        src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/static-assets/images/swiggy_logo_white.png"
-                    }, void 0, false, {
-                        fileName: "src/component/Header.js",
-                        lineNumber: 6,
-                        columnNumber: 17
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: " text-white text-base font-bold flex gap-15 items-center",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                target: "_blank",
-                                href: "https://www.swiggy.com/corporate/",
-                                children: "Swiggy Corporate"
-                            }, void 0, false, {
-                                fileName: "src/component/Header.js",
-                                lineNumber: 8,
-                                columnNumber: 21
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                target: "_blank",
-                                href: "https://partner.swiggy.com/login#/swiggy",
-                                children: "Partner With Us"
-                            }, void 0, false, {
-                                fileName: "src/component/Header.js",
-                                lineNumber: 9,
-                                columnNumber: 21
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                className: "border border-white py-3 px-4 rounded-2xl",
-                                target: "_blank",
-                                href: "https://www.swiggy.com/corporate/",
-                                children: "Get the App"
-                            }, void 0, false, {
-                                fileName: "src/component/Header.js",
-                                lineNumber: 10,
-                                columnNumber: 21
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                className: "border border-black bg-black py-3 px-4 rounded-2xl",
-                                target: "_blank",
-                                href: "https://www.swiggy.com/corporate/",
-                                children: "Sign in"
-                            }, void 0, false, {
-                                fileName: "src/component/Header.js",
-                                lineNumber: 11,
-                                columnNumber: 21
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/component/Header.js",
-                        lineNumber: 7,
-                        columnNumber: 17
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/component/Header.js",
-                lineNumber: 5,
-                columnNumber: 13
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "pt-16 pb-8 relative",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        className: "h-110 w-60 absolute top-0 left-0",
-                        src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Veggies_new.png"
-                    }, void 0, false, {
-                        fileName: "src/component/Header.js",
-                        lineNumber: 15,
-                        columnNumber: 17
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        className: "h-110 w-60 absolute top-0 right-0",
-                        src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Sushi_replace.png"
-                    }, void 0, false, {
-                        fileName: "src/component/Header.js",
-                        lineNumber: 16,
-                        columnNumber: 17
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "max-w-[60%] text-white font-bold text-5xl container mx-auto text-center",
-                        children: "Order food & groceries. Discover best restaurants. Swiggy it!"
-                    }, void 0, false, {
-                        fileName: "src/component/Header.js",
-                        lineNumber: 17,
-                        columnNumber: 17
-                    }, this),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "max-w-[70%] container mx-auto flex gap-5 mt-10",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                className: "bg-white w-[40%] text-xl py-4 px-6 rounded-2xl",
-                                placeholder: "Enter your deliver location"
-                            }, void 0, false, {
-                                fileName: "src/component/Header.js",
-                                lineNumber: 19,
-                                columnNumber: 17
-                            }, this),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                className: "bg-white w-[55%] text-xl py-4 px-6 rounded-2xl",
-                                placeholder: "Search for resturant,item or more"
-                            }, void 0, false, {
-                                fileName: "src/component/Header.js",
-                                lineNumber: 20,
-                                columnNumber: 17
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/component/Header.js",
-                        lineNumber: 18,
-                        columnNumber: 17
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "src/component/Header.js",
-                lineNumber: 14,
-                columnNumber: 13
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
-                fileName: "src/component/Header.js",
-                lineNumber: 24,
-                columnNumber: 13
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "src/component/Header.js",
-        lineNumber: 3,
-        columnNumber: 9
-    }, this);
+var _foodData = require("../Utils/FoodData");
+var _foodcard = require("./Foodcard");
+var _foodcardDefault = parcelHelpers.interopDefault(_foodcard);
+function FoodOption() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "w-[80%] container mx-auto flex flex-wrap mt-20 gap-3",
+            children: (0, _foodData.imageGridCards).map((foodDetails)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _foodcardDefault.default), {
+                    foodDetails: foodDetails
+                }, foodDetails.id, false, {
+                    fileName: "src/component/FoodOption.js",
+                    lineNumber: 9,
+                    columnNumber: 49
+                }, this))
+        }, void 0, false, {
+            fileName: "src/component/FoodOption.js",
+            lineNumber: 7,
+            columnNumber: 9
+        }, this)
+    }, void 0, false);
 }
-_c = Header;
+_c = FoodOption;
 var _c;
-$RefreshReg$(_c, "Header");
+$RefreshReg$(_c, "FoodOption");
 
-  $parcel$ReactRefreshHelpers$b724.postlude(module);
+  $parcel$ReactRefreshHelpers$43b1.postlude(module);
 } finally {
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["5Ehp6","hh6uc"], "hh6uc", "parcelRequire9026", {}, null, null, "http://localhost:1234")
+},{"react/jsx-dev-runtime":"dVPUn","../Utils/FoodData":"ih6Sw","./Foodcard":"4O4F1","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"ih6Sw":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "imageGridCards", ()=>imageGridCards);
+const imageGridCards = [
+    {
+        "id": "2568142",
+        "imageId": "PC_Mweb/Dosa.png",
+        "action": {
+            "link": "https://www.swiggy.com/collections/80424?collection_id=80424&tags=layout_CCS_Dosa&type=rcv2",
+            "text": "Dosa",
+            "type": "DEEPLINK"
+        },
+        "entityType": "BANNER",
+        "accessibility": {
+            "altText": "restaurants curated for dosa",
+            "altTextCta": "open"
+        },
+        "entityId": "https://www.swiggy.com/collections/80424?collection_id=80424&tags=layout_CCS_Dosa&type=rcv2",
+        "frequencyCapping": {},
+        "externalMarketing": {},
+        "overlayIcon": {},
+        "footerOverlay": {
+            "title": {},
+            "subtitle": {},
+            "cta": {}
+        }
+    },
+    {
+        "id": "2568314",
+        "imageId": "PC_Mweb/Idli.png",
+        "action": {
+            "link": "https://www.swiggy.com/collections/80440?collection_id=80440&search_context=idli&tags=layout_CCS_Idli&type=rcv2",
+            "text": "Idli",
+            "type": "DEEPLINK"
+        },
+        "entityType": "BANNER",
+        "accessibility": {
+            "altText": "restaurants curated for idly",
+            "altTextCta": "open"
+        },
+        "entityId": "https://www.swiggy.com/collections/80440?collection_id=80440&search_context=idli&tags=layout_CCS_Idli&type=rcv2",
+        "frequencyCapping": {},
+        "externalMarketing": {},
+        "overlayIcon": {},
+        "footerOverlay": {
+            "title": {},
+            "subtitle": {},
+            "cta": {}
+        }
+    },
+    {
+        "id": "2568021",
+        "imageId": "PC_Mweb/Vada.png",
+        "action": {
+            "link": "https://www.swiggy.com/collections/80425?collection_id=80425&type=rcv2",
+            "text": "Vada",
+            "type": "DEEPLINK"
+        },
+        "entityType": "BANNER",
+        "accessibility": {
+            "altText": "restaurants curated for vada",
+            "altTextCta": "open"
+        },
+        "entityId": "https://www.swiggy.com/collections/80425?collection_id=80425&type=rcv2",
+        "frequencyCapping": {},
+        "externalMarketing": {},
+        "overlayIcon": {},
+        "footerOverlay": {
+            "title": {},
+            "subtitle": {},
+            "cta": {}
+        }
+    },
+    {
+        "id": "2568339",
+        "imageId": "PC_Mweb/Biryani.png",
+        "action": {
+            "link": "https://www.swiggy.com/collections/83639?collection_id=83639&search_context=biryani&tags=layout_CCS_Biryani&type=rcv2",
+            "text": "Biryani",
+            "type": "DEEPLINK"
+        },
+        "entityType": "BANNER",
+        "accessibility": {
+            "altText": "restaurants curated for biryani",
+            "altTextCta": "open"
+        },
+        "entityId": "https://www.swiggy.com/collections/83639?collection_id=83639&search_context=biryani&tags=layout_CCS_Biryani&type=rcv2",
+        "frequencyCapping": {},
+        "externalMarketing": {},
+        "overlayIcon": {},
+        "footerOverlay": {
+            "title": {},
+            "subtitle": {},
+            "cta": {}
+        }
+    },
+    {
+        "id": "2568025",
+        "imageId": "PC_Mweb/Upma.png",
+        "action": {
+            "link": "https://www.swiggy.com/collections/80411?collection_id=80411&type=rcv2",
+            "text": "Upma",
+            "type": "DEEPLINK"
+        },
+        "entityType": "BANNER",
+        "accessibility": {
+            "altText": "restaurants curated for upma",
+            "altTextCta": "open"
+        },
+        "entityId": "https://www.swiggy.com/collections/80411?collection_id=80411&type=rcv2",
+        "frequencyCapping": {},
+        "externalMarketing": {},
+        "overlayIcon": {},
+        "footerOverlay": {
+            "title": {},
+            "subtitle": {},
+            "cta": {}
+        }
+    },
+    {
+        "id": "2568312",
+        "imageId": "PC_Mweb/Cake.png",
+        "action": {
+            "link": "https://www.swiggy.com/collections/83655?collection_id=83655&tags=layout_CCS_Cake&type=rcv2",
+            "text": "Cakes",
+            "type": "DEEPLINK"
+        },
+        "entityType": "BANNER",
+        "accessibility": {
+            "altText": "restaurant curated for cake",
+            "altTextCta": "open"
+        },
+        "entityId": "https://www.swiggy.com/collections/83655?collection_id=83655&tags=layout_CCS_Cake&type=rcv2",
+        "frequencyCapping": {},
+        "externalMarketing": {},
+        "overlayIcon": {},
+        "footerOverlay": {
+            "title": {},
+            "subtitle": {},
+            "cta": {}
+        }
+    },
+    {
+        "id": "2568359",
+        "imageId": "PC_Mweb/Paratha.png",
+        "action": {
+            "link": "https://www.swiggy.com/collections/80475?collection_id=80475&type=rcv2",
+            "text": "Paratha",
+            "type": "DEEPLINK"
+        },
+        "entityType": "BANNER",
+        "accessibility": {
+            "altText": "restaurants curated for paratha",
+            "altTextCta": "open"
+        },
+        "entityId": "https://www.swiggy.com/collections/80475?collection_id=80475&type=rcv2",
+        "frequencyCapping": {},
+        "externalMarketing": {},
+        "overlayIcon": {},
+        "footerOverlay": {
+            "title": {},
+            "subtitle": {},
+            "cta": {}
+        }
+    },
+    {
+        "id": "2568015",
+        "imageId": "PC_Mweb/Chole%20Bhature.png",
+        "action": {
+            "link": "https://www.swiggy.com/collections/80382?collection_id=80382&tags=layout_CCS_CholeBhature&type=rcv2",
+            "text": "Chole Bhature",
+            "type": "DEEPLINK"
+        },
+        "entityType": "BANNER",
+        "accessibility": {
+            "altText": "restaurant curated for chhole bhatoore",
+            "altTextCta": "open"
+        },
+        "entityId": "https://www.swiggy.com/collections/80382?collection_id=80382&tags=layout_CCS_CholeBhature&type=rcv2",
+        "frequencyCapping": {},
+        "externalMarketing": {},
+        "overlayIcon": {},
+        "footerOverlay": {
+            "title": {},
+            "subtitle": {},
+            "cta": {}
+        }
+    },
+    {
+        "id": "2568367",
+        "imageId": "PC_Mweb/Kachori.png",
+        "action": {
+            "link": "https://www.swiggy.com/collections/80448?collection_id=80448&type=rcv2",
+            "text": "Kachori",
+            "type": "DEEPLINK"
+        },
+        "entityType": "BANNER",
+        "accessibility": {
+            "altText": "restaurant curated for kachori",
+            "altTextCta": "open"
+        },
+        "entityId": "https://www.swiggy.com/collections/80448?collection_id=80448&type=rcv2",
+        "frequencyCapping": {},
+        "externalMarketing": {},
+        "overlayIcon": {},
+        "footerOverlay": {
+            "title": {},
+            "subtitle": {},
+            "cta": {}
+        }
+    },
+    {
+        "id": "2568311",
+        "imageId": "PC_Mweb/Poori.png",
+        "action": {
+            "link": "https://www.swiggy.com/collections/80377?collection_id=80377&type=rcv2",
+            "text": "Poori",
+            "type": "DEEPLINK"
+        },
+        "entityType": "BANNER",
+        "accessibility": {
+            "altText": "restaurant curated for poori",
+            "altTextCta": "open"
+        },
+        "entityId": "https://www.swiggy.com/collections/80377?collection_id=80377&type=rcv2",
+        "frequencyCapping": {},
+        "externalMarketing": {},
+        "overlayIcon": {},
+        "footerOverlay": {
+            "title": {},
+            "subtitle": {},
+            "cta": {}
+        }
+    },
+    {
+        "id": "2568349",
+        "imageId": "PC_Mweb/Samosa.png",
+        "action": {
+            "link": "https://www.swiggy.com/collections/80396?collection_id=80396&type=rcv2",
+            "text": "Samosa",
+            "type": "DEEPLINK"
+        },
+        "entityType": "BANNER",
+        "accessibility": {
+            "altText": "restaurants curated for samosa",
+            "altTextCta": "open"
+        },
+        "entityId": "https://www.swiggy.com/collections/80396?collection_id=80396&type=rcv2",
+        "frequencyCapping": {},
+        "externalMarketing": {},
+        "overlayIcon": {},
+        "footerOverlay": {
+            "title": {},
+            "subtitle": {},
+            "cta": {}
+        }
+    },
+    {
+        "id": "2568019",
+        "imageId": "PC_Mweb/Tea.png",
+        "action": {
+            "link": "https://www.swiggy.com/collections/80406?collection_id=80406&tags=layout_CCS_Tea&type=rcv2",
+            "text": "Tea",
+            "type": "DEEPLINK"
+        },
+        "entityType": "BANNER",
+        "accessibility": {
+            "altText": "restaurants curated for tea",
+            "altTextCta": "open"
+        },
+        "entityId": "https://www.swiggy.com/collections/80406?collection_id=80406&tags=layout_CCS_Tea&type=rcv2",
+        "frequencyCapping": {},
+        "externalMarketing": {},
+        "overlayIcon": {},
+        "footerOverlay": {
+            "title": {},
+            "subtitle": {},
+            "cta": {}
+        }
+    },
+    {
+        "id": "2568547",
+        "imageId": "PC_Mweb/Poha.png",
+        "action": {
+            "link": "https://www.swiggy.com/collections/80373?collection_id=80373&tags=layout_CCS_Poha&type=rcv2",
+            "text": "Poha",
+            "type": "DEEPLINK"
+        },
+        "entityType": "BANNER",
+        "accessibility": {
+            "altText": "restaurants curated for poha",
+            "altTextCta": "open"
+        },
+        "entityId": "https://www.swiggy.com/collections/80373?collection_id=80373&tags=layout_CCS_Poha&type=rcv2",
+        "frequencyCapping": {},
+        "externalMarketing": {},
+        "overlayIcon": {},
+        "footerOverlay": {
+            "title": {},
+            "subtitle": {},
+            "cta": {}
+        }
+    },
+    {
+        "id": "2568370",
+        "imageId": "PC_Mweb/Shake.png",
+        "action": {
+            "link": "https://www.swiggy.com/collections/83673?collection_id=83673&tags=layout_CCS_Shakes&type=rcv2",
+            "text": "Shake",
+            "type": "DEEPLINK"
+        },
+        "entityType": "BANNER",
+        "accessibility": {
+            "altText": "restaurants curated for shakes",
+            "altTextCta": "open"
+        },
+        "entityId": "https://www.swiggy.com/collections/83673?collection_id=83673&tags=layout_CCS_Shakes&type=rcv2",
+        "frequencyCapping": {},
+        "externalMarketing": {},
+        "overlayIcon": {},
+        "footerOverlay": {
+            "title": {},
+            "subtitle": {},
+            "cta": {}
+        }
+    },
+    {
+        "id": "2568646",
+        "imageId": "PC_Mweb/Omelette.png",
+        "action": {
+            "link": "https://www.swiggy.com/collections/80467?collection_id=80467&type=rcv2",
+            "text": "Omelette",
+            "type": "DEEPLINK"
+        },
+        "entityType": "BANNER",
+        "accessibility": {
+            "altText": "restaurant curated for omelette",
+            "altTextCta": "open"
+        },
+        "entityId": "https://www.swiggy.com/collections/80467?collection_id=80467&type=rcv2",
+        "frequencyCapping": {},
+        "externalMarketing": {},
+        "overlayIcon": {},
+        "footerOverlay": {
+            "title": {},
+            "subtitle": {},
+            "cta": {}
+        }
+    },
+    {
+        "id": "2568332",
+        "imageId": "PC_Mweb/Coffee.png",
+        "action": {
+            "link": "https://www.swiggy.com/collections/83659?collection_id=83659&tags=layout_CCS_Coffee&type=rcv2",
+            "text": "Coffee",
+            "type": "DEEPLINK"
+        },
+        "entityType": "BANNER",
+        "accessibility": {
+            "altText": "restaurants curated for coffee",
+            "altTextCta": "open"
+        },
+        "entityId": "https://www.swiggy.com/collections/83659?collection_id=83659&tags=layout_CCS_Coffee&type=rcv2",
+        "frequencyCapping": {},
+        "externalMarketing": {},
+        "overlayIcon": {},
+        "footerOverlay": {
+            "title": {},
+            "subtitle": {},
+            "cta": {}
+        }
+    },
+    {
+        "id": "2568313",
+        "imageId": "PC_Mweb/Cutlet.png",
+        "action": {
+            "link": "https://www.swiggy.com/collections/80414?collection_id=80414&type=rcv2",
+            "text": "Cutlet",
+            "type": "DEEPLINK"
+        },
+        "entityType": "BANNER",
+        "accessibility": {
+            "altText": "restaurant curated for cutlet",
+            "altTextCta": "open"
+        },
+        "entityId": "https://www.swiggy.com/collections/80414?collection_id=80414&type=rcv2",
+        "frequencyCapping": {},
+        "externalMarketing": {},
+        "overlayIcon": {},
+        "footerOverlay": {
+            "title": {},
+            "subtitle": {},
+            "cta": {}
+        }
+    },
+    {
+        "id": "2568317",
+        "imageId": "PC_Mweb/Dhokla.png",
+        "action": {
+            "link": "https://www.swiggy.com/collections/80422?collection_id=80422&type=rcv2",
+            "text": "Dhokla",
+            "type": "DEEPLINK"
+        },
+        "entityType": "BANNER",
+        "accessibility": {
+            "altText": "restaurants curated for dhokla",
+            "altTextCta": "open"
+        },
+        "entityId": "https://www.swiggy.com/collections/80422?collection_id=80422&type=rcv2",
+        "frequencyCapping": {},
+        "externalMarketing": {},
+        "overlayIcon": {},
+        "footerOverlay": {
+            "title": {},
+            "subtitle": {},
+            "cta": {}
+        }
+    },
+    {
+        "id": "2568337",
+        "imageId": "PC_Mweb/Pav%20Bhaji.png",
+        "action": {
+            "link": "https://www.swiggy.com/collections/80362?collection_id=80362&tags=layout_PavBhaji_Contextual&type=rcv2",
+            "text": "Pav Bhaji",
+            "type": "DEEPLINK"
+        },
+        "entityType": "BANNER",
+        "accessibility": {
+            "altText": "restaurant curated for pav bhaji",
+            "altTextCta": "open"
+        },
+        "entityId": "https://www.swiggy.com/collections/80362?collection_id=80362&tags=layout_PavBhaji_Contextual&type=rcv2",
+        "frequencyCapping": {},
+        "externalMarketing": {},
+        "overlayIcon": {},
+        "footerOverlay": {
+            "title": {},
+            "subtitle": {},
+            "cta": {}
+        }
+    },
+    {
+        "id": "2568324",
+        "imageId": "PC_Mweb/Khichdi.png",
+        "action": {
+            "link": "https://www.swiggy.com/collections/80455?collection_id=80455&type=rcv2",
+            "text": "Khichdi",
+            "type": "DEEPLINK"
+        },
+        "entityType": "BANNER",
+        "accessibility": {
+            "altText": "restaurants curated for khichdi",
+            "altTextCta": "open"
+        },
+        "entityId": "https://www.swiggy.com/collections/80455?collection_id=80455&type=rcv2",
+        "frequencyCapping": {},
+        "externalMarketing": {},
+        "overlayIcon": {},
+        "footerOverlay": {
+            "title": {},
+            "subtitle": {},
+            "cta": {}
+        }
+    }
+];
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"4O4F1":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$ca9f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$ca9f.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ca9f.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>Foodcard);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _foodOption = require("./FoodOption");
+var _foodOptionDefault = parcelHelpers.interopDefault(_foodOption);
+function Foodcard({ foodDetails }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+            className: "w-40 h-50 object-cover",
+            src: "https://media-assets.swiggy.com/swiggy/image/upload/" + foodDetails.imageId
+        }, void 0, false, {
+            fileName: "src/component/Foodcard.js",
+            lineNumber: 7,
+            columnNumber: 9
+        }, this)
+    }, void 0, false);
+}
+_c = Foodcard;
+var _c;
+$RefreshReg$(_c, "Foodcard");
+
+  $parcel$ReactRefreshHelpers$ca9f.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","./FoodOption":"c7dZB","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["5Ehp6","hh6uc"], "hh6uc", "parcelRequire9026", {}, null, null, "http://localhost:1234")
 
 //# sourceMappingURL=Swiggy_Project_React.518f3808.js.map
