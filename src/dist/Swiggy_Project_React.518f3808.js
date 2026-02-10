@@ -20453,9 +20453,16 @@ var _foodOption = require("./FoodOption");
 var _foodOptionDefault = parcelHelpers.interopDefault(_foodOption);
 function Foodcard({ foodDetails }) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-            className: "w-40 h-50 object-cover",
-            src: "https://media-assets.swiggy.com/swiggy/image/upload/" + foodDetails.imageId
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+            href: foodDetails?.action?.link,
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "w-40 h-50 object-cover",
+                src: "https://media-assets.swiggy.com/swiggy/image/upload/" + foodDetails?.imageId
+            }, void 0, false, {
+                fileName: "src/component/Foodcard.js",
+                lineNumber: 8,
+                columnNumber: 13
+            }, this)
         }, void 0, false, {
             fileName: "src/component/Foodcard.js",
             lineNumber: 7,
