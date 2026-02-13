@@ -20503,32 +20503,46 @@ var _groceryCard = require("./GroceryCard");
 var _groceryCardDefault = parcelHelpers.interopDefault(_groceryCard);
 function Groceryoption() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: "mt-20 font-bold",
-                children: "Shop groceries on Instamart"
-            }, void 0, false, {
-                fileName: "src/component/GroceryOption.js",
-                lineNumber: 7,
-                columnNumber: 5
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "w-[80%] container mx-auto flex flex-wrap mt-5 gap-3  ",
-                children: (0, _grocery.imageGridCard).map((imgdata)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _groceryCardDefault.default), {
-                        imgdata: imgdata,
-                        children: " "
-                    }, imgdata.id, false, {
-                        fileName: "src/component/GroceryOption.js",
-                        lineNumber: 10,
-                        columnNumber: 39
-                    }, this))
-            }, void 0, false, {
-                fileName: "src/component/GroceryOption.js",
-                lineNumber: 8,
-                columnNumber: 5
-            }, this)
-        ]
-    }, void 0, true);
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "w-[80%] mx-auto mt-20 px-4",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    className: "font-bold text-2xl mb-4",
+                    children: "Shop groceries on Instamart"
+                }, void 0, false, {
+                    fileName: "src/component/GroceryOption.js",
+                    lineNumber: 8,
+                    columnNumber: 5
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "container mx-auto flex mt-5 gap-10 overflow-x-auto overflow-y-hidden pb-8",
+                    children: (0, _grocery.imageGridCard).map((imgdata)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _groceryCardDefault.default), {
+                            imgdata: imgdata,
+                            children: " "
+                        }, imgdata.id, false, {
+                            fileName: "src/component/GroceryOption.js",
+                            lineNumber: 12,
+                            columnNumber: 39
+                        }, this))
+                }, void 0, false, {
+                    fileName: "src/component/GroceryOption.js",
+                    lineNumber: 10,
+                    columnNumber: 5
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {
+                    className: "my-8 border-gray-200"
+                }, void 0, false, {
+                    fileName: "src/component/GroceryOption.js",
+                    lineNumber: 15,
+                    columnNumber: 5
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/component/GroceryOption.js",
+            lineNumber: 7,
+            columnNumber: 5
+        }, this)
+    }, void 0, false);
 }
 _c = Groceryoption;
 var _c;
@@ -21043,16 +21057,17 @@ var _foodOptionDefault = parcelHelpers.interopDefault(_foodOption);
 function Grocerycard({ imgdata }) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "flex-shrink-0 w-36 md:w-40 transition-transform hover:scale-105",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                     href: imgdata?.action?.link,
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        className: "w-36 h-45",
+                        className: "w-full h-full object-contain",
                         src: "https://media-assets.swiggy.com/swiggy/image/upload/" + imgdata?.imageId
                     }, void 0, false, {
                         fileName: "src/component/GroceryCard.js",
-                        lineNumber: 9,
-                        columnNumber: 10
+                        lineNumber: 10,
+                        columnNumber: 17
                     }, this)
                 }, void 0, false, {
                     fileName: "src/component/GroceryCard.js",
@@ -21060,11 +21075,12 @@ function Grocerycard({ imgdata }) {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "text-center mt-2 text-sm font-semibold whitespace-normal break-words w-full",
                     children: imgdata?.action?.text
                 }, void 0, false, {
                     fileName: "src/component/GroceryCard.js",
-                    lineNumber: 11,
-                    columnNumber: 4
+                    lineNumber: 14,
+                    columnNumber: 5
                 }, this)
             ]
         }, void 0, true, {
@@ -21083,6 +21099,6 @@ $RefreshReg$(_c, "Grocerycard");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","./FoodOption":"c7dZB","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["5Ehp6","hh6uc"], "hh6uc", "parcelRequire9026", {}, null, null, "http://localhost:1234")
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./FoodOption":"c7dZB"}]},["5Ehp6","hh6uc"], "hh6uc", "parcelRequire9026", {}, null, null, "http://localhost:1234")
 
 //# sourceMappingURL=Swiggy_Project_React.518f3808.js.map
