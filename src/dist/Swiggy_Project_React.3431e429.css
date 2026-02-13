@@ -49,6 +49,7 @@
     --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-gray-300: oklch(87.2% .01 258.338);
     --color-black: #000;
     --color-white: #fff;
     --spacing: .25rem;
@@ -393,12 +394,24 @@
     margin-inline: auto;
   }
 
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
+
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
 
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
+  }
+
+  .ml-8 {
+    margin-left: calc(var(--spacing) * 8);
+  }
+
+  .ml-auto {
+    margin-left: auto;
   }
 
   .block {
@@ -433,6 +446,10 @@
     height: calc(var(--spacing) * 12);
   }
 
+  .h-45 {
+    height: calc(var(--spacing) * 45);
+  }
+
   .h-50 {
     height: calc(var(--spacing) * 50);
   }
@@ -441,12 +458,24 @@
     height: calc(var(--spacing) * 110);
   }
 
+  .w-36 {
+    width: calc(var(--spacing) * 36);
+  }
+
   .w-40 {
     width: calc(var(--spacing) * 40);
   }
 
   .w-60 {
     width: calc(var(--spacing) * 60);
+  }
+
+  .w-64 {
+    width: calc(var(--spacing) * 64);
+  }
+
+  .w-\[8\] {
+    width: 8px;
   }
 
   .w-\[40\%\] {
@@ -471,6 +500,10 @@
 
   .max-w-\[80\%\] {
     max-width: 80%;
+  }
+
+  .flex-shrink-0 {
+    flex-shrink: 0;
   }
 
   .flex-grow {
@@ -509,6 +542,18 @@
     gap: calc(var(--spacing) * 15);
   }
 
+  .overflow-x-auto {
+    overflow-x: auto;
+  }
+
+  .scroll-auto {
+    scroll-behavior: auto;
+  }
+
+  .scroll-smooth {
+    scroll-behavior: smooth;
+  }
+
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -520,6 +565,10 @@
 
   .border-black {
     border-color: var(--color-black);
+  }
+
+  .border-gray-300 {
+    border-color: var(--color-gray-300);
   }
 
   .border-white {
@@ -540,6 +589,10 @@
 
   .object-cover {
     object-fit: cover;
+  }
+
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
   }
 
   .px-4 {
@@ -596,6 +649,10 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+
+  .whitespace-nowrap {
+    white-space: nowrap;
   }
 
   .text-white {
