@@ -1,1 +1,1 @@
-This is a Swiggy frontend clone using React.
+This is a Swiggy frontend clone using Html,Reactjs,Redux & tailwind
