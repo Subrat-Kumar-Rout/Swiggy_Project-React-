@@ -53,7 +53,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-gray-200: oklch(92.8% .006 264.531);
-    --color-gray-300: oklch(87.2% .01 258.338);
     --color-gray-800: oklch(27.8% .033 256.848);
     --color-black: #000;
     --color-white: #fff;
@@ -428,22 +427,6 @@
     margin-bottom: calc(var(--spacing) * 4);
   }
 
-  .ml-15 {
-    margin-left: calc(var(--spacing) * 15);
-  }
-
-  .ml-25 {
-    margin-left: calc(var(--spacing) * 25);
-  }
-
-  .ml-30 {
-    margin-left: calc(var(--spacing) * 30);
-  }
-
-  .ml-35 {
-    margin-left: calc(var(--spacing) * 35);
-  }
-
   .block {
     display: block;
   }
@@ -476,14 +459,6 @@
     height: calc(var(--spacing) * 12);
   }
 
-  .h-40 {
-    height: calc(var(--spacing) * 40);
-  }
-
-  .h-45 {
-    height: calc(var(--spacing) * 45);
-  }
-
   .h-50 {
     height: calc(var(--spacing) * 50);
   }
@@ -494,10 +469,6 @@
 
   .h-full {
     height: 100%;
-  }
-
-  .w-3 {
-    width: calc(var(--spacing) * 3);
   }
 
   .w-36 {
@@ -540,10 +511,6 @@
     max-width: 80%;
   }
 
-  .max-w-\[1200px\] {
-    max-width: 1200px;
-  }
-
   .flex-shrink-0 {
     flex-shrink: 0;
   }
@@ -572,20 +539,12 @@
     justify-content: space-between;
   }
 
-  .justify-center {
-    justify-content: center;
-  }
-
   .gap-3 {
     gap: calc(var(--spacing) * 3);
   }
 
   .gap-5 {
     gap: calc(var(--spacing) * 5);
-  }
-
-  .gap-6 {
-    gap: calc(var(--spacing) * 6);
   }
 
   .gap-10 {
@@ -600,16 +559,8 @@
     overflow-x: auto;
   }
 
-  .overflow-x-scroll {
-    overflow-x: scroll;
-  }
-
   .overflow-y-hidden {
     overflow-y: hidden;
-  }
-
-  .scroll-smooth {
-    scroll-behavior: smooth;
   }
 
   .rounded-2xl {
@@ -633,10 +584,6 @@
     border-color: var(--color-white);
   }
 
-  .bg-\[\#F2F2F3\] {
-    background-color: #f2f2f3;
-  }
-
   .bg-\[\#FF5200\] {
     background-color: #ff5200;
   }
@@ -655,10 +602,6 @@
 
   .object-cover {
     object-fit: cover;
-  }
-
-  .p-3 {
-    padding: calc(var(--spacing) * 3);
   }
 
   .px-4 {
@@ -683,10 +626,6 @@
 
   .pt-16 {
     padding-top: calc(var(--spacing) * 16);
-  }
-
-  .pb-4 {
-    padding-bottom: calc(var(--spacing) * 4);
   }
 
   .pb-8 {
@@ -742,14 +681,6 @@
 
   .whitespace-normal {
     white-space: normal;
-  }
-
-  .whitespace-nowrap {
-    white-space: nowrap;
-  }
-
-  .text-gray-800 {
-    color: var(--color-gray-800);
   }
 
   .text-white {

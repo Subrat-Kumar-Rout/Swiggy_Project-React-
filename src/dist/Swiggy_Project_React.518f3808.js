@@ -20521,19 +20521,19 @@ function Groceryoption() {
                             children: " "
                         }, imgdata.id, false, {
                             fileName: "src/component/GroceryOption.js",
-                            lineNumber: 12,
+                            lineNumber: 11,
                             columnNumber: 39
                         }, this))
                 }, void 0, false, {
                     fileName: "src/component/GroceryOption.js",
-                    lineNumber: 10,
+                    lineNumber: 9,
                     columnNumber: 5
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {
                     className: "my-8 border-gray-200"
                 }, void 0, false, {
                     fileName: "src/component/GroceryOption.js",
-                    lineNumber: 15,
+                    lineNumber: 14,
                     columnNumber: 5
                 }, this)
             ]
@@ -21066,12 +21066,12 @@ function Grocerycard({ imgdata }) {
                         src: "https://media-assets.swiggy.com/swiggy/image/upload/" + imgdata?.imageId
                     }, void 0, false, {
                         fileName: "src/component/GroceryCard.js",
-                        lineNumber: 10,
+                        lineNumber: 8,
                         columnNumber: 17
                     }, this)
                 }, void 0, false, {
                     fileName: "src/component/GroceryCard.js",
-                    lineNumber: 8,
+                    lineNumber: 7,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -21079,13 +21079,13 @@ function Grocerycard({ imgdata }) {
                     children: imgdata?.action?.text
                 }, void 0, false, {
                     fileName: "src/component/GroceryCard.js",
-                    lineNumber: 14,
+                    lineNumber: 10,
                     columnNumber: 5
                 }, this)
             ]
         }, void 0, true, {
             fileName: "src/component/GroceryCard.js",
-            lineNumber: 7,
+            lineNumber: 6,
             columnNumber: 5
         }, this)
     }, void 0, false);
