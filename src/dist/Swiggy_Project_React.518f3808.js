@@ -734,27 +734,34 @@ var _foodOptionDefault = parcelHelpers.interopDefault(_foodOption);
 var _groceryOption = require("./component/GroceryOption");
 var _groceryOptionDefault = parcelHelpers.interopDefault(_groceryOption);
 var _dineOption = require("./component/DineOption");
+var _restaurant = require("./component/Restaurant");
+var _restaurantDefault = parcelHelpers.interopDefault(_restaurant);
 function Main() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 12,
+                lineNumber: 13,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _foodOptionDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 13,
+                lineNumber: 14,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _groceryOptionDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 14,
+                lineNumber: 15,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _dineOption.DineOption), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 15,
+                lineNumber: 16,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantDefault.default), {}, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 17,
                 columnNumber: 9
             }, this)
         ]
@@ -763,7 +770,7 @@ function Main() {
 _c = Main;
 (0, _clientDefault.default).createRoot(document.getElementById("root")).render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Main, {}, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 20,
+    lineNumber: 22,
     columnNumber: 61
 }, undefined));
 var _c;
@@ -774,7 +781,7 @@ $RefreshReg$(_c, "Main");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-dom/client":"hrvwu","./component/Header":"3FunF","./component/FoodOption":"c7dZB","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./component/GroceryOption":"c2h0S","./component/DineOption":"e6Rue"}],"dVPUn":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-dom/client":"hrvwu","./component/Header":"3FunF","./component/FoodOption":"c7dZB","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./component/GroceryOption":"c2h0S","./component/DineOption":"e6Rue","./component/Restaurant":"2RMh5"}],"dVPUn":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -23855,40 +23862,48 @@ var _dineOption = require("./DineOption");
 function DineCard({ value }) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "shrink-0 w-80 relative",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                className: "w-full h-45 object-cover rounded-2xl",
-                src: "https://media-assets.swiggy.com/swiggy/image/upload/" + value?.info?.mediaFiles[0]?.url
-            }, void 0, false, {
-                fileName: "src/component/DineCard.js",
-                lineNumber: 7,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "absolute bottom-0 inset-x-0 h-10 bg-gradient-to-t from-black/90 to-transparent"
-            }, void 0, false, {
-                fileName: "src/component/DineCard.js",
-                lineNumber: 8,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "absolute bottom-3 left-2 text-white font-bold text-lg drop-shadow-md truncate pr-2 ",
-                children: value?.info?.name
-            }, void 0, false, {
-                fileName: "src/component/DineCard.js",
-                lineNumber: 9,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "absolute bottom-3 right-2 text-white font-bold text-lg drop-shadow-md truncate pr-2 ",
-                children: value?.info?.rating?.value
-            }, void 0, false, {
-                fileName: "src/component/DineCard.js",
-                lineNumber: 10,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true, {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+            target: "_blank",
+            href: value.cta.link,
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    className: "w-full h-45 object-cover rounded-2xl",
+                    src: "https://media-assets.swiggy.com/swiggy/image/upload/" + value?.info?.mediaFiles[0]?.url
+                }, void 0, false, {
+                    fileName: "src/component/DineCard.js",
+                    lineNumber: 8,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "absolute bottom-0 inset-x-0 h-10 bg-gradient-to-t from-black/90 to-transparent"
+                }, void 0, false, {
+                    fileName: "src/component/DineCard.js",
+                    lineNumber: 9,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "absolute bottom-3 left-2 text-white font-bold text-lg drop-shadow-md truncate pr-2 ",
+                    children: value?.info?.name
+                }, void 0, false, {
+                    fileName: "src/component/DineCard.js",
+                    lineNumber: 10,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "absolute bottom-3 right-2 text-white font-bold text-lg drop-shadow-md truncate pr-2 ",
+                    children: value?.info?.rating?.value
+                }, void 0, false, {
+                    fileName: "src/component/DineCard.js",
+                    lineNumber: 11,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/component/DineCard.js",
+            lineNumber: 7,
+            columnNumber: 9
+        }, this)
+    }, void 0, false, {
         fileName: "src/component/DineCard.js",
         lineNumber: 6,
         columnNumber: 9
@@ -23903,6 +23918,52 @@ $RefreshReg$(_c, "DineCard");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","./DineOption":"e6Rue","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["5Ehp6","hh6uc"], "hh6uc", "parcelRequire9026", {}, null, null, "http://localhost:1234")
+},{"react/jsx-dev-runtime":"dVPUn","./DineOption":"e6Rue","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"2RMh5":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$4604 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$4604.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$4604.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>Resturant);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
+function Resturant() {
+    _s();
+    const [resdata, Setresdata] = (0, _react.useState)([]);
+    (0, _react.useEffect)(()=>{
+        async function fetchData() {
+            const proxyServer = "https://thingproxy.freeboard.io/fetch/";
+            const swiggyapi = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=20.2706&lng=85.8334&is-seo-homepage-enabled=true";
+            const response = await fetch(proxyServer + swiggyapi);
+            const data = await response.json();
+            Setresdata(data.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
+        }
+        fetchData();
+    }, []);
+    console.log(resdata);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "Check the Console for Data"
+    }, void 0, false, {
+        fileName: "src/component/Restaurant.js",
+        lineNumber: 22,
+        columnNumber: 7
+    }, this);
+}
+_s(Resturant, "uJXE75PUCsu6WRQJp541qn/t9jo=");
+_c = Resturant;
+var _c;
+$RefreshReg$(_c, "Resturant");
+
+  $parcel$ReactRefreshHelpers$4604.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react/jsx-dev-runtime":"dVPUn"}]},["5Ehp6","hh6uc"], "hh6uc", "parcelRequire9026", {}, null, null, "http://localhost:1234")
 
 //# sourceMappingURL=Swiggy_Project_React.518f3808.js.map
