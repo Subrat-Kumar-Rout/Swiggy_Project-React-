@@ -53,7 +53,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-gray-200: oklch(92.8% .006 264.531);
-    --color-gray-800: oklch(27.8% .033 256.848);
     --color-black: #000;
     --color-white: #fff;
     --spacing: .25rem;
@@ -69,6 +68,7 @@
     --text-5xl--line-height: 1;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
+    --radius-xl: .75rem;
     --radius-2xl: 1rem;
     --ease-out: cubic-bezier(0, 0, .2, 1);
     --default-transition-duration: .15s;
@@ -455,12 +455,28 @@
     display: table;
   }
 
+  .h-0 {
+    height: calc(var(--spacing) * 0);
+  }
+
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
 
+  .h-40 {
+    height: calc(var(--spacing) * 40);
+  }
+
+  .h-45 {
+    height: calc(var(--spacing) * 45);
+  }
+
   .h-50 {
     height: calc(var(--spacing) * 50);
+  }
+
+  .h-70 {
+    height: calc(var(--spacing) * 70);
   }
 
   .h-110 {
@@ -471,6 +487,10 @@
     height: 100%;
   }
 
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
+
   .w-36 {
     width: calc(var(--spacing) * 36);
   }
@@ -479,8 +499,24 @@
     width: calc(var(--spacing) * 40);
   }
 
+  .w-45 {
+    width: calc(var(--spacing) * 45);
+  }
+
   .w-60 {
     width: calc(var(--spacing) * 60);
+  }
+
+  .w-70 {
+    width: calc(var(--spacing) * 70);
+  }
+
+  .w-80 {
+    width: calc(var(--spacing) * 80);
+  }
+
+  .w-90 {
+    width: calc(var(--spacing) * 90);
   }
 
   .w-\[40\%\] {
@@ -511,7 +547,7 @@
     max-width: 80%;
   }
 
-  .flex-shrink-0 {
+  .flex-shrink-0, .shrink-0 {
     flex-shrink: 0;
   }
 
@@ -527,8 +563,16 @@
     resize: both;
   }
 
+  .flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
   .flex-wrap {
     flex-wrap: wrap;
+  }
+
+  .place-items-center {
+    place-items: center;
   }
 
   .items-center {
@@ -537,6 +581,10 @@
 
   .justify-between {
     justify-content: space-between;
+  }
+
+  .justify-center {
+    justify-content: center;
   }
 
   .gap-3 {
@@ -563,8 +611,16 @@
     overflow-y: hidden;
   }
 
+  .rounded {
+    border-radius: .25rem;
+  }
+
   .rounded-2xl {
     border-radius: var(--radius-2xl);
+  }
+
+  .rounded-xl {
+    border-radius: var(--radius-xl);
   }
 
   .border {
@@ -602,6 +658,10 @@
 
   .object-cover {
     object-fit: cover;
+  }
+
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
   }
 
   .px-4 {
