@@ -21123,7 +21123,7 @@ function DineOption() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: " max-w-[80%] mx-auto",
+                className: " max-w-[80%] mx-auto font-bold text-lg",
                 children: "Discover best restaurants on Dineout"
             }, void 0, false, {
                 fileName: "src/component/DineOption.js",
@@ -23854,16 +23854,41 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _dineOption = require("./DineOption");
 function DineCard({ value }) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "shrink-0 w-80",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-            className: "w-full h-45 object-cover rounded-2xl",
-            src: "https://media-assets.swiggy.com/swiggy/image/upload/" + value?.info?.mediaFiles[0]?.url
-        }, void 0, false, {
-            fileName: "src/component/DineCard.js",
-            lineNumber: 7,
-            columnNumber: 9
-        }, this)
-    }, void 0, false, {
+        className: "shrink-0 w-80 relative",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "w-full h-45 object-cover rounded-2xl",
+                src: "https://media-assets.swiggy.com/swiggy/image/upload/" + value?.info?.mediaFiles[0]?.url
+            }, void 0, false, {
+                fileName: "src/component/DineCard.js",
+                lineNumber: 7,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "absolute bottom-0 inset-x-0 h-10 bg-gradient-to-t from-black/90 to-transparent"
+            }, void 0, false, {
+                fileName: "src/component/DineCard.js",
+                lineNumber: 8,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "absolute bottom-3 left-2 text-white font-bold text-lg drop-shadow-md truncate pr-2 ",
+                children: value?.info?.name
+            }, void 0, false, {
+                fileName: "src/component/DineCard.js",
+                lineNumber: 9,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "absolute bottom-3 right-2 text-white font-bold text-lg drop-shadow-md truncate pr-2 ",
+                children: value?.info?.rating?.value
+            }, void 0, false, {
+                fileName: "src/component/DineCard.js",
+                lineNumber: 10,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
         fileName: "src/component/DineCard.js",
         lineNumber: 6,
         columnNumber: 9
