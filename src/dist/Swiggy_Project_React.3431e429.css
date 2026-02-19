@@ -1,4 +1,4 @@
-/*! tailwindcss v4.1.18 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.2.0 | MIT License | https://tailwindcss.com */
 @layer properties {
   @supports (((-webkit-hyphens: none)) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color: rgb(from red r g b)))) {
     *, :before, :after, ::backdrop {
@@ -354,6 +354,18 @@
     inset-inline: calc(var(--spacing) * 0);
   }
 
+  .start {
+    inset-inline-start: var(--spacing);
+  }
+
+  .\!end {
+    inset-inline-end: var(--spacing) !important;
+  }
+
+  .end {
+    inset-inline-end: var(--spacing);
+  }
+
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
@@ -462,6 +474,10 @@
     display: block;
   }
 
+  .contents {
+    display: contents;
+  }
+
   .flex {
     display: flex;
   }
@@ -504,10 +520,6 @@
 
   .h-110 {
     height: calc(var(--spacing) * 110);
-  }
-
-  .h-145 {
-    height: calc(var(--spacing) * 145);
   }
 
   .h-full {
