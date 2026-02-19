@@ -741,27 +741,27 @@ function Main() {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 13,
+                lineNumber: 14,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _foodOptionDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 14,
+                lineNumber: 15,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _groceryOptionDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 15,
+                lineNumber: 16,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _dineOption.DineOption), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 16,
+                lineNumber: 17,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantDefault.default), {}, void 0, false, {
                 fileName: "src/App.js",
-                lineNumber: 17,
+                lineNumber: 18,
                 columnNumber: 9
             }, this)
         ]
@@ -770,7 +770,7 @@ function Main() {
 _c = Main;
 (0, _clientDefault.default).createRoot(document.getElementById("root")).render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Main, {}, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 22,
+    lineNumber: 23,
     columnNumber: 61
 }, undefined));
 var _c;
@@ -23928,42 +23928,87 @@ $parcel$ReactRefreshHelpers$4604.prelude(module);
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>Resturant);
+parcelHelpers.export(exports, "default", ()=>Restaurant);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
+var _restCard = require("./RestCard");
+var _restCardDefault = parcelHelpers.interopDefault(_restCard);
 var _s = $RefreshSig$();
-function Resturant() {
+function Restaurant() {
     _s();
     const [resdata, Setresdata] = (0, _react.useState)([]);
     (0, _react.useEffect)(()=>{
         async function fetchData() {
-            const proxyServer = "https://thingproxy.freeboard.io/fetch/";
+            const proxyServer = "https://cors-anywhere.herokuapp.com/";
             const swiggyapi = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=20.2706&lng=85.8334&is-seo-homepage-enabled=true";
             const response = await fetch(proxyServer + swiggyapi);
             const data = await response.json();
+            // Setresdata(data);
             Setresdata(data.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
         }
         fetchData();
     }, []);
-    console.log(resdata);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-        children: "Check the Console for Data"
+    // console.log(resdata);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "flex flex-wrap w-[80%] mx-auto mt-20 gap-5",
+        children: resdata.map((restInfo)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restCardDefault.default), {
+                restInfo: restInfo
+            }, restInfo.info.id, false, {
+                fileName: "src/component/Restaurant.js",
+                lineNumber: 26,
+                columnNumber: 45
+            }, this))
     }, void 0, false, {
         fileName: "src/component/Restaurant.js",
-        lineNumber: 22,
-        columnNumber: 7
+        lineNumber: 23,
+        columnNumber: 13
     }, this);
 }
-_s(Resturant, "uJXE75PUCsu6WRQJp541qn/t9jo=");
-_c = Resturant;
+_s(Restaurant, "uJXE75PUCsu6WRQJp541qn/t9jo=");
+_c = Restaurant;
 var _c;
-$RefreshReg$(_c, "Resturant");
+$RefreshReg$(_c, "Restaurant");
 
   $parcel$ReactRefreshHelpers$4604.postlude(module);
 } finally {
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react/jsx-dev-runtime":"dVPUn"}]},["5Ehp6","hh6uc"], "hh6uc", "parcelRequire9026", {}, null, null, "http://localhost:1234")
+},{"react":"jMk1U","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react/jsx-dev-runtime":"dVPUn","./RestCard":"4TNSS"}],"4TNSS":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$546d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$546d.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$546d.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>RestCard);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _restaurant = require("./Restaurant");
+var _restaurantDefault = parcelHelpers.interopDefault(_restaurant);
+function RestCard({ restInfo }) {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+            className: "w-70 h-45 object-cover",
+            src: "https://media-assets.swiggy.com/swiggy/image/upload/" + restInfo?.info?.cloudinaryImageId
+        }, void 0, false, {
+            fileName: "src/component/RestCard.js",
+            lineNumber: 6,
+            columnNumber: 9
+        }, this)
+    }, void 0, false);
+}
+_c = RestCard;
+var _c;
+$RefreshReg$(_c, "RestCard");
+
+  $parcel$ReactRefreshHelpers$546d.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","./Restaurant":"2RMh5","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["5Ehp6","hh6uc"], "hh6uc", "parcelRequire9026", {}, null, null, "http://localhost:1234")
 
 //# sourceMappingURL=Swiggy_Project_React.518f3808.js.map
