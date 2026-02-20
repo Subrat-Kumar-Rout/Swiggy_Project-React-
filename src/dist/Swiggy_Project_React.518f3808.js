@@ -31259,6 +31259,8 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _restCard = require("./RestCard");
 var _restCardDefault = parcelHelpers.interopDefault(_restCard);
+var _shimmer = require("./Shimmer");
+var _shimmerDefault = parcelHelpers.interopDefault(_shimmer);
 var _s = $RefreshSig$();
 function Restaurant() {
     _s();
@@ -31273,18 +31275,23 @@ function Restaurant() {
         }
         fetchData();
     }, []);
+    if (resdata.length == 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
+        fileName: "src/component/Restaurant.js",
+        lineNumber: 21,
+        columnNumber: 16
+    }, this);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "flex flex-wrap w-[80%] mx-auto mt-20 gap-5",
         children: resdata.map((restInfo)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restCardDefault.default), {
                 restInfo: restInfo
             }, restInfo.info.id, false, {
                 fileName: "src/component/Restaurant.js",
-                lineNumber: 26,
+                lineNumber: 30,
                 columnNumber: 45
             }, this))
     }, void 0, false, {
         fileName: "src/component/Restaurant.js",
-        lineNumber: 23,
+        lineNumber: 27,
         columnNumber: 13
     }, this);
 }
@@ -31298,7 +31305,7 @@ $RefreshReg$(_c, "Restaurant");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","./RestCard":"4TNSS","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"4TNSS":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","./RestCard":"4TNSS","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./Shimmer":"djImw"}],"4TNSS":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$546d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$546d.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -31333,6 +31340,96 @@ $RefreshReg$(_c, "RestCard");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","./Restaurant":"2RMh5","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["5Ehp6","hh6uc"], "hh6uc", "parcelRequire9026", {}, null, null, "http://localhost:1234")
+},{"react/jsx-dev-runtime":"dVPUn","./Restaurant":"2RMh5","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"djImw":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$baf5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$baf5.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$baf5.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>Shimmer);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+function Shimmer() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "flex flex-wrap w-[80%] mx-auto mt-20 gap-5",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "w-64 h-40 bg-gray-200 rounded-lg animate-pulse"
+                }, void 0, false, {
+                    fileName: "src/component/Shimmer.js",
+                    lineNumber: 7,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "w-64 h-40 bg-gray-200 rounded-lg animate-pulse"
+                }, void 0, false, {
+                    fileName: "src/component/Shimmer.js",
+                    lineNumber: 8,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "w-64 h-40 bg-gray-200 rounded-lg animate-pulse"
+                }, void 0, false, {
+                    fileName: "src/component/Shimmer.js",
+                    lineNumber: 9,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "w-64 h-40 bg-gray-200 rounded-lg animate-pulse"
+                }, void 0, false, {
+                    fileName: "src/component/Shimmer.js",
+                    lineNumber: 10,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "w-64 h-40 bg-gray-200 rounded-lg animate-pulse"
+                }, void 0, false, {
+                    fileName: "src/component/Shimmer.js",
+                    lineNumber: 11,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "w-64 h-40 bg-gray-200 rounded-lg animate-pulse"
+                }, void 0, false, {
+                    fileName: "src/component/Shimmer.js",
+                    lineNumber: 12,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "w-64 h-40 bg-gray-200 rounded-lg animate-pulse"
+                }, void 0, false, {
+                    fileName: "src/component/Shimmer.js",
+                    lineNumber: 13,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "w-64 h-40 bg-gray-200 rounded-lg animate-pulse"
+                }, void 0, false, {
+                    fileName: "src/component/Shimmer.js",
+                    lineNumber: 14,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/component/Shimmer.js",
+            lineNumber: 5,
+            columnNumber: 13
+        }, this)
+    }, void 0, false);
+}
+_c = Shimmer;
+var _c;
+$RefreshReg$(_c, "Shimmer");
+
+  $parcel$ReactRefreshHelpers$baf5.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"./Restaurant":"2RMh5","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","react/jsx-dev-runtime":"dVPUn","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["5Ehp6","hh6uc"], "hh6uc", "parcelRequire9026", {}, null, null, "http://localhost:1234")
 
 //# sourceMappingURL=Swiggy_Project_React.518f3808.js.map

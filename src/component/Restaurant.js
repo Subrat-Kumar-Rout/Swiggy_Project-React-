@@ -1,5 +1,6 @@
 import { useState,useEffect } from "react";
 import RestCard from "./RestCard";
+import Shimmer from "./Shimmer"
 
 export default function Restaurant(){
     const [resdata,Setresdata] = useState([]);
@@ -16,6 +17,9 @@ export default function Restaurant(){
          fetchData();
     },[]);
 
+    if(resdata.length == 0){
+        return <Shimmer></Shimmer>
+    }
     
   
 
