@@ -732,6 +732,8 @@ var _homeDefault = parcelHelpers.interopDefault(_home);
 var _restaurant = require("./component/Restaurant");
 var _restaurantDefault = parcelHelpers.interopDefault(_restaurant);
 var _reactRouterDom = require("react-router-dom");
+var _restaurantMenu = require("./component/RestaurantMenu");
+var _restaurantMenuDefault = parcelHelpers.interopDefault(_restaurantMenu);
 function Main() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
@@ -760,6 +762,18 @@ function Main() {
                         fileName: "src/App.js",
                         lineNumber: 14,
                         columnNumber: 13
+                    }, this),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/city/bhubaneswar/:id",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantMenuDefault.default), {}, void 0, false, {
+                            fileName: "src/App.js",
+                            lineNumber: 15,
+                            columnNumber: 58
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.js",
+                        lineNumber: 15,
+                        columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
@@ -777,7 +791,7 @@ function Main() {
 _c = Main;
 (0, _clientDefault.default).createRoot(document.getElementById("root")).render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Main, {}, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 21,
+    lineNumber: 22,
     columnNumber: 61
 }, undefined));
 var _c;
@@ -788,7 +802,7 @@ $RefreshReg$(_c, "Main");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-dom/client":"hrvwu","./component/Home":"cyAx0","./component/Restaurant":"2RMh5","react-router-dom":"61z4w","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"dVPUn":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","react":"jMk1U","react-dom/client":"hrvwu","./component/Home":"cyAx0","./component/Restaurant":"2RMh5","react-router-dom":"61z4w","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","./component/RestaurantMenu":"5vzEN"}],"dVPUn":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -31319,14 +31333,22 @@ parcelHelpers.export(exports, "default", ()=>RestCard);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _restaurant = require("./Restaurant");
 var _restaurantDefault = parcelHelpers.interopDefault(_restaurant);
+var _reactRouterDom = require("react-router-dom");
 function RestCard({ restInfo }) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-            className: "w-70 h-45 object-cover",
-            src: "https://media-assets.swiggy.com/swiggy/image/upload/" + restInfo?.info?.cloudinaryImageId
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+            to: "/city/bhubaneswar/:",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                className: "w-70 h-45 object-cover",
+                src: "https://media-assets.swiggy.com/swiggy/image/upload/" + restInfo?.info?.cloudinaryImageId
+            }, void 0, false, {
+                fileName: "src/component/RestCard.js",
+                lineNumber: 8,
+                columnNumber: 9
+            }, this)
         }, void 0, false, {
             fileName: "src/component/RestCard.js",
-            lineNumber: 6,
+            lineNumber: 7,
             columnNumber: 9
         }, this)
     }, void 0, false);
@@ -31340,7 +31362,7 @@ $RefreshReg$(_c, "RestCard");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","./Restaurant":"2RMh5","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"djImw":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"dVPUn","./Restaurant":"2RMh5","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react-router-dom":"61z4w"}],"djImw":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$baf5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 $parcel$ReactRefreshHelpers$baf5.init();
 var prevRefreshReg = globalThis.$RefreshReg$;
@@ -31430,6 +31452,69 @@ $RefreshReg$(_c, "Shimmer");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"./Restaurant":"2RMh5","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","react/jsx-dev-runtime":"dVPUn","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}]},["5Ehp6","hh6uc"], "hh6uc", "parcelRequire9026", {}, null, null, "http://localhost:1234")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","react/jsx-dev-runtime":"dVPUn","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi"}],"5vzEN":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$298a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+$parcel$ReactRefreshHelpers$298a.init();
+var prevRefreshReg = globalThis.$RefreshReg$;
+var prevRefreshSig = globalThis.$RefreshSig$;
+$parcel$ReactRefreshHelpers$298a.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>RestaurantMenu);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
+function RestaurantMenu() {
+    _s();
+    const { id } = (0, _reactRouterDom.useParams)();
+    const [ResData, SetResData] = (0, _react.useState)(null);
+    (0, _react.useEffect)(()=>{
+        async function fetchData() {
+            const proxyServer = "https://cors-anywhere.herokuapp.com/";
+            const swiggyapi = `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=20.2706&lng=85.8334&restaurantId=${id}`;
+            const response = await fetch(proxyServer + swiggyapi);
+            const data = await response.json();
+            SetResData(data);
+        }
+        fetchData();
+    }, []);
+    console.log(ResData);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "Hello World"
+            }, void 0, false, {
+                fileName: "src/component/RestaurantMenu.js",
+                lineNumber: 25,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: id
+            }, void 0, false, {
+                fileName: "src/component/RestaurantMenu.js",
+                lineNumber: 26,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true);
+}
+_s(RestaurantMenu, "NR4A83F8BHCWghBUgs3EIjjoYk4=", false, function() {
+    return [
+        (0, _reactRouterDom.useParams)
+    ];
+});
+_c = RestaurantMenu;
+var _c;
+$RefreshReg$(_c, "RestaurantMenu");
+
+  $parcel$ReactRefreshHelpers$298a.postlude(module);
+} finally {
+  globalThis.$RefreshReg$ = prevRefreshReg;
+  globalThis.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"dVPUn","react-router-dom":"61z4w","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react":"jMk1U"}]},["5Ehp6","hh6uc"], "hh6uc", "parcelRequire9026", {}, null, null, "http://localhost:1234")
 
 //# sourceMappingURL=Swiggy_Project_React.518f3808.js.map

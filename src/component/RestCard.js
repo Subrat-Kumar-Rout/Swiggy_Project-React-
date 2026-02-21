@@ -1,9 +1,12 @@
 import  Restaurant from "./Restaurant";
+import { Link } from "react-router-dom";
 
 export default function RestCard({restInfo}){
     return(
         <>
+        <Link to="/city/bhubaneswar/:">
         <img className="w-70 h-45 object-cover" src={"https://media-assets.swiggy.com/swiggy/image/upload/" + restInfo?.info?.cloudinaryImageId}></img>
+        </Link>
         </>
     )
 }
