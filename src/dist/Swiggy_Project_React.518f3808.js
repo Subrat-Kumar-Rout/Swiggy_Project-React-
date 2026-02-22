@@ -31336,19 +31336,12 @@ var _restaurantDefault = parcelHelpers.interopDefault(_restaurant);
 var _reactRouterDom = require("react-router-dom");
 function RestCard({ restInfo }) {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-            to: "/city/bhubaneswar/:",
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                className: "w-70 h-45 object-cover",
-                src: "https://media-assets.swiggy.com/swiggy/image/upload/" + restInfo?.info?.cloudinaryImageId
-            }, void 0, false, {
-                fileName: "src/component/RestCard.js",
-                lineNumber: 8,
-                columnNumber: 9
-            }, this)
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+            className: "w-70 h-45 object-cover",
+            src: "https://media-assets.swiggy.com/swiggy/image/upload/" + restInfo?.info?.cloudinaryImageId
         }, void 0, false, {
             fileName: "src/component/RestCard.js",
-            lineNumber: 7,
+            lineNumber: 8,
             columnNumber: 9
         }, this)
     }, void 0, false);
@@ -31465,45 +31458,46 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>RestaurantMenu);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
-var _reactRouterDom = require("react-router-dom");
+var _reactRouter = require("react-router");
 var _s = $RefreshSig$();
 function RestaurantMenu() {
     _s();
-    const { id } = (0, _reactRouterDom.useParams)();
-    const [ResData, SetResData] = (0, _react.useState)(null);
+    let { id } = (0, _reactRouter.useParams)();
+    console.log(id);
+    const [RestData, setRestData] = (0, _react.useState)(null);
     (0, _react.useEffect)(()=>{
         async function fetchData() {
             const proxyServer = "https://cors-anywhere.herokuapp.com/";
-            const swiggyapi = `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=20.2706&lng=85.8334&restaurantId=${id}`;
-            const response = await fetch(proxyServer + swiggyapi);
+            const swiggyAPI = `https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=28.7040592&lng=77.10249019999999&restaurantId=${id}`;
+            const response = await fetch(proxyServer + swiggyAPI);
             const data = await response.json();
-            SetResData(data);
+            setRestData(data);
         }
         fetchData();
     }, []);
-    console.log(ResData);
+    console.log(RestData);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "Hello World"
+                children: "Hello Coder Army"
             }, void 0, false, {
                 fileName: "src/component/RestaurantMenu.js",
-                lineNumber: 25,
+                lineNumber: 30,
                 columnNumber: 9
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: id
             }, void 0, false, {
                 fileName: "src/component/RestaurantMenu.js",
-                lineNumber: 26,
+                lineNumber: 31,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true);
 }
-_s(RestaurantMenu, "NR4A83F8BHCWghBUgs3EIjjoYk4=", false, function() {
+_s(RestaurantMenu, "LOh9VdCTxrWaHoOPQ1R8eu+z8eE=", false, function() {
     return [
-        (0, _reactRouterDom.useParams)
+        (0, _reactRouter.useParams)
     ];
 });
 _c = RestaurantMenu;
@@ -31515,6 +31509,6 @@ $RefreshReg$(_c, "RestaurantMenu");
   globalThis.$RefreshReg$ = prevRefreshReg;
   globalThis.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"dVPUn","react-router-dom":"61z4w","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react":"jMk1U"}]},["5Ehp6","hh6uc"], "hh6uc", "parcelRequire9026", {}, null, null, "http://localhost:1234")
+},{"react/jsx-dev-runtime":"dVPUn","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7h6Pi","react":"jMk1U","react-router":"4ChVy"}]},["5Ehp6","hh6uc"], "hh6uc", "parcelRequire9026", {}, null, null, "http://localhost:1234")
 
 //# sourceMappingURL=Swiggy_Project_React.518f3808.js.map
